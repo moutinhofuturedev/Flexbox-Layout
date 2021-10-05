@@ -1,0 +1,65 @@
+
+
+h1 {
+    position: absolute;
+    margin: -95px 350px;
+    font-size: 380%;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 5px 5px gray;
+    animation: pulse 1s ease infinite alternate ,rudge 3s linear infinite alternate;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        color: #000;
+    }
+
+    50% {
+        color: rebeccapurple;
+    }
+}
+
+@keyframes rudge {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(80px, 0);
+    }
+
+    100% {
+        transform: translate(-80px, 0);
+    }
+}
+
+.caixa1 {
+    margin: 200px 450px;
+    background-color: rgb(0, 174, 255);
+    display: flex;
+    width: 450px;
+    height: 200px;
+    justify-content: space-around;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.caixa1>div {
+    background-color: yellow;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 4px 4px #000;
+    margin: 6px;
+    padding: 70px 6px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.caixa1>div:hover {
+    background: rebeccapurple;
+    color: white;
+}
